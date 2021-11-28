@@ -1,0 +1,75 @@
+
+// ----------------- EACH
+
+@each $animal in Tigre, Serpiente, Tortuga, Oso, Ciervo, Zorro {
+    .#{$animal}-icon {
+        background-image: 
+        url("../imagenes/#{$animal}.jpg");
+        height: $height-360;
+        background-size: contain;
+        border: dashed;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .Tigre-icon {
+        height: $height-768;
+    }
+    .Serpiente-icon {
+        height: $height-768;
+    }
+    .Tortuga-icon {
+        height: $height-768;
+    }
+    .Oso-icon {
+        height: $height-768;
+    }
+    .Ciervo-icon {
+        height: $height-768;
+    }
+    .Zorro-icon {
+        height: $height-768;
+    }
+    .info__img--primary {
+        height: 55%;
+        align-self: center;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .Tigre-icon {
+        height: $height-1024;
+    }
+    .Serpiente-icon {
+        height: $height-1024;
+    }
+    .Tortuga-icon {
+        height: $height-1024;
+    }
+    .Oso-icon {
+        height: $height-1024;
+    }
+    .Ciervo-icon {
+        height: $height-1024;
+    }
+    .Zorro-icon {
+        height: $height-1024;
+    }
+    .info__img--primary {
+        height: auto;
+    }
+}
+
+// ----------------- MAPAS
+
+$redes: (
+    facebook: #3a5795,
+    instagram: #3f729b,
+    whatsapp: #00bb2d,
+);
+
+@each $red, $color in $redes {
+    .btn--#{$red} {
+        background-color: $color;
+    }
+}

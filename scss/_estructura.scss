@@ -1,0 +1,176 @@
+* { margin: 0; padding: 0;}
+
+/* ------------------ HEADER ------------------ */
+
+header {
+    background-image: 
+    url("../imagenes/Banner.jpg");
+    background-size: contain;
+    border-style: dashed;
+    height: 10rem;
+}
+
+/* ------------------ NAV ------------------ */
+
+nav {
+    img {
+        width: 5rem;
+        margin-left: 5rem;
+    }
+    ul {
+        padding: 0.5rem;
+        list-style: none;
+        li {
+            list-style-type: none;
+            padding: 0.5rem 2rem;
+            border-radius: 50px;
+            a {
+                text-decoration: none;
+            }
+            #activoNgr {
+                color: $color-negro;
+            }
+        }
+        .activo {
+            background-color: $color-wheat;
+            font-weight: $font-bold;
+        }
+    }
+}
+
+/* ------------------ MAIN ------------------ */
+
+h1 {
+    font-weight: $font-bold;
+    text-transform: $text-uppercase;
+    font-size: 4rem;
+    text-align: center;
+    padding: 10px;
+    animation-duration: 3s;
+    animation-name: aparecer;
+    @keyframes aparecer {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+}
+
+.info {
+    padding: 5px 1rem;
+    margin-bottom: 2.5rem;
+    .info__titulo {
+        font-style: $font-bold;
+        text-decoration: $text-underline;
+        text-align: center;
+    }
+    .info__titulo--primary {
+        font-size: 4rem;
+        padding: 1rem;
+        color: $color-azul;
+    }
+    .info__texto {
+        padding: 5px;
+        margin: 5px;
+        font-weight: $font-bold;
+    }
+    .info__texto--primary {
+        font-size: 1.8rem;
+        line-height: 2rem;
+    }
+    .info__link {
+        text-decoration: none;
+        color: $color-negro;
+        &:hover {
+            color: $color-rojo;
+        }
+    }
+    .info__img {
+        border-radius: 5px;
+    }
+    .info__img--primary {
+        width: 65%;
+        margin: 3rem;
+    }
+    .info__img--secondary {
+        width: 50%;
+        margin-top: 2rem;
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+    .info__img--terciary {
+        width: 25%;
+        margin: 1rem;
+    }
+}
+
+.extra {
+    margin: 3rem 0rem;
+    padding: 2rem;
+    background-image: 
+    url("../imagenes/Fondo_negro.jpg");
+    background-size: contain;
+    border-radius: 30px;
+    .extra__titulo--primary {
+        font-size: 2.5rem;
+        padding: 1rem;
+        color: $color-wheat;
+    }
+    .extra__img {
+        margin: 1rem 0rem;
+        width: 100%;
+    }
+    .extra__video {
+        width: 60%;
+        padding: 1rem;
+    }
+}
+
+/* ------------------ FOOTER ------------------ */
+
+.pie {
+    background-color: $color-negro;
+    border-top: solid;
+    text-align: center;
+    .pie__titulo {
+        font-weight: $font-bold;
+        color: $color-gris;
+    }
+    .pie__texto {
+        font-size: 2rem;
+        color: $color-gris;
+    }
+    .btn--blanco {
+        color: $color-blanco;
+    }
+}
+
+/* ------------------ 404 ------------------ */
+
+.error {
+    background-image: 
+    url("../imagenes/Enlace_roto.jpg");
+    background-size: contain;
+    .error_titulo {
+        width: 20rem;
+        background-color: $color-wheat;
+        color: $color-rojo;
+    }
+    .error__texto {
+        font-weight: $font-bold;
+        background-color: $color-blanco;
+        font-size: 3rem;
+        color: $color-negro;
+        padding: 2rem;
+    }
+    .error__link {
+        text-decoration: none;
+        color: $color-negro;
+        &:hover {
+            color: $color-rojo;
+        }
+    }
+}

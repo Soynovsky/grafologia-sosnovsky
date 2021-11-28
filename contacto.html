@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="formulario, contacto, redes, mails, whatsapp">
+    <meta name="description" content="Ponte en contacto conmigo para saber más sobre el tema">
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,800;1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.0/font/bootstrap-icons.css">
+    <title>Contacto | Redes | Consultas</title>
+</head>
+<body>
+    <!-- HEADER -->
+    <div class="container-fluid">
+        <header></header>
+    </div>
+
+    <!-- NAV -->
+    <div class="container sticky-top">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html"><img src="imagenes/Logo.png" alt="logo_grafologiasol"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav justify-content-end w-100">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="grafo_tips.html">Grafo Tips</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="otros.html">Otras opciones</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="curiosidades.html">Curiosidades</a>
+                        </li>
+                        <li class="nav-item activo">
+                            <a class="nav-link" id="activoNgr" aria-current="page" href="contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <!-- MAIN -->
+    <div class="container-fluid">
+        <div class="row"> 
+            <h1>Medios de <span class="badge bg-secondary">Contacto</span></h1>   
+            <div class="col-12 col-lg-8">
+                <section class="info col-12">
+                    <h2 class="info__titulo info__titulo--primary">Ponete en contacto conmigo</h2>    
+                    <form class="p-5">
+                        <div class="mb-3">
+                            <label title="Nombre" class="form-label">Nombre</label>
+                            <input type="text" class="form-control">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1">
+                        </div>
+                        <div class="mb-3">
+                            <label title="Teléfono" class="form-label">Teléfono</label>
+                            <input type="tel" class="form-control">
+                        </div>
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Quiero recibir notificaciones en mi correo.</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+                            <label for="floatingTextarea2">Comentarios</label>
+                        </div>
+                        <div class="col-12 d-flex flex-row d-flex justify-content-around mt-5">
+                            <button type="submit" class="btn btn-primary">Enviar</button>
+                            <button type="reset" class="btn btn-primary">Borrar</button>
+                        </div>
+                    </form>
+                </section>
+            </div>
+            <div class="col-12 col-lg-4">
+                <aside class="extra col-12 text-center">
+                    <h3 class="extra__titulo lateral__titulo--primary">Y no te olvides que...</h3>
+                        <video class="extra__video" src="videos/Gift_cards.mp4" controls>Tu navegador no implementa el elemento<code>videos</code></video>
+                </aside>
+            </div>
+        </div>
+
+        <!-- CORTE -->
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-2 col-lg-2">
+                    <div class="Tigre-icon border-4"></div>
+                </div>
+                <div class="col-2 col-lg-2">
+                    <div class="Serpiente-icon border-4"></div>
+                </div>
+                <div class="col-2 col-lg-2">
+                    <div class="Tortuga-icon border-4"></div>
+                </div>
+                <div class="col-2 col-lg-2">
+                    <div class="Oso-icon border-4"></div>
+                </div>
+                <div class="col-2 col-lg-2">
+                    <div class="Ciervo-icon border-4"></div>
+                </div>
+                <div class="col-2 col-lg-2">
+                    <div class="Zorro-icon border-4"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- EXTRA -->
+        <div class="container">
+            <section class="info">
+                <h2 class="info__titulo info__titulo--primary">Datos extra</h2>
+                    <p class="info__texto">La grafología está basada en algunas afirmaciones: cuando nosotros escribimos, el ego está activo, pero no siempre es así, esta actividad puede aumentar o disminuir; puede estar en su más alto nivel, cuando se necesita un esfuerzo de parte del escritor y en el caso de la disminución de nivel, cuando la acción de escribir ya es parte de una costumbre.</p>
+            </section>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="pie container-fluid py-3 mt-3 dark">
+        <div class="col-12">
+            <h4 class="pie__titulo">&#169; Copyright 2021 | Todos los derechos tienen izquierdos.</h4>
+                <p class="pie__texto">Seguime en las redes:</p>
+        </div>
+        <div class="col-12 fs-2">
+            <a href="https://www.instagram.com/grafologiasol/" class="btn btn--blanco btn--instagram">Instagram
+                <i class="bi-instagram btn--blanco"></i>
+            </a>
+            <a href="#" class="btn btn--blanco btn--whatsapp">Whatsapp
+                <i class="bi-whatsapp btn--blanco"></i>
+            </a>
+            <a href="https://www.facebook.com/grafologiasol-105597641221980" class="btn btn--blanco btn--facebook">Facebook
+                <i class="bi-facebook btn--blanco"></i>
+            </a>
+        </div>
+    </footer>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>

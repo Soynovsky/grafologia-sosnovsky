@@ -1,0 +1,19 @@
+html { 
+    font-size: 62.5%;
+    body { 
+        font-family: 'Montserrat', sans-serif; 
+        font-size: 1.5rem;
+        background-image:     
+        url("../imagenes/dorado.jpg");
+        background-size: contain;
+    }
+}
+
+$text-uppercase: uppercase;
+$text-underline: underline;
+$font-bold: bold;
+$font-italic: italic;
+
+$height-360: 5rem;
+$height-768: 12rem;
+$height-1024: 15rem;
