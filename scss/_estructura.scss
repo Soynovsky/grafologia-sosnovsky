@@ -78,6 +78,11 @@ h1 {
     }
     .info__texto--primary {
         font-size: 1.8rem;
+        line-height: 2.5rem;
+    }
+    .info__lista {
+        font-weight: $font-bold;
+        font-size: 1.5rem;
         line-height: 2rem;
     }
     .info__link {
@@ -122,6 +127,9 @@ h1 {
     .extra__img {
         margin: 1rem 0rem;
         width: 100%;
+    }
+    .extra__img--primary {
+        width: 95%;
     }
     .extra__video {
         width: 60%;

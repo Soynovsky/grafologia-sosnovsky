@@ -213,6 +213,12 @@ h1 {
 
 .info .info__texto--primary {
   font-size: 1.8rem;
+  line-height: 2.5rem;
+}
+
+.info .info__lista {
+  font-weight: bold;
+  font-size: 1.5rem;
   line-height: 2rem;
 }
 
@@ -266,6 +272,10 @@ h1 {
 .extra .extra__img {
   margin: 1rem 0rem;
   width: 100%;
+}
+
+.extra .extra__img--primary {
+  width: 95%;
 }
 
 .extra .extra__video {
