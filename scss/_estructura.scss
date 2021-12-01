@@ -62,7 +62,6 @@ h1 {
     padding: 5px 1rem;
     margin-bottom: 2.5rem;
     .info__titulo {
-        font-style: $font-bold;
         text-decoration: $text-underline;
         text-align: center;
     }
@@ -70,6 +69,11 @@ h1 {
         font-size: 4rem;
         padding: 1rem;
         color: $color-azul;
+    }
+    .info__titulo--secondary {
+        font-weight: $font-bold;
+        font-size: 3rem;
+        color: $color-verde
     }
     .info__texto {
         padding: 5px;
@@ -98,8 +102,11 @@ h1 {
     .info__img--primary {
         width: 65%;
         margin: 3rem;
+        @include sombras;
     }
     .info__img--secondary {
+        color: $color-negro;
+        @include sombras;
         width: 50%;
         margin-top: 2rem;
         &:hover {
@@ -107,8 +114,8 @@ h1 {
         }
     }
     .info__img--terciary {
-        width: 25%;
-        margin: 1rem;
+        width: 50%;
+        margin: 1.5rem;
     }
 }
 

@@ -34,6 +34,36 @@
         height: 55%;
         align-self: center;
     }
+    #losElementos {
+        grid-template-columns: 50% 50%;
+        grid-template-rows: auto auto;
+        justify-content: center;
+        align-content: center;
+    }
+    #agua {
+        order: 1;
+    }
+    #agua-texto {
+        order: 3;
+    }
+    #fuego {
+        order: 2;
+    }
+    #fuego-texto {
+        order: 4;
+    }
+    #aire {
+        order: 5;
+    }
+    #aire-texto {
+        order: 7;
+    }
+    #tierra {
+        order: 6;
+    }
+    #tierra-texto {
+        order: 8;
+    }
 }
 
 @media only screen and (min-width: 1024px) {
@@ -57,6 +87,39 @@
     }
     .info__img--primary {
         height: auto;
+    }
+    #losElementos {
+        grid-template-columns: 50% 50%;
+        grid-template-rows: auto auto auto auto;
+        align-items: center;
+    }
+    #agua {
+        justify-self: right;
+        order: 1;
+    }
+    #agua-texto {
+        order: 2;
+    }
+    #fuego {
+        justify-self: left;
+        order: 4;
+    }
+    #fuego-texto {
+        order: 3;
+    }
+    #aire {
+        justify-self: right;
+        order: 5;
+    }
+    #aire-texto {
+        order: 6;
+    }
+    #tierra {
+        justify-self: left;
+        order: 8;
+    }
+    #tierra-texto {
+        order: 7;
     }
 }
 

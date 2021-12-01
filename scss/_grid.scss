@@ -1,0 +1,22 @@
+#losElementos {
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+}
+
+#agua {
+    @include sombras;
+}
+
+#fuego {
+    @include sombras;
+}
+
+#aire {
+    @include sombras;
+}
+
+#tierra {
+    @include sombras;
+}
