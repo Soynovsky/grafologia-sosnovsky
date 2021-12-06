@@ -1,243 +1,3 @@
-html {
-  font-size: 62.5%;
-}
-
-html body {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 1.5rem;
-  background-image: url("../imagenes/dorado.jpg");
-  background-size: contain;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-}
-
-/* ------------------ HEADER ------------------ */
-header {
-  background-image: url("../imagenes/Banner.jpg");
-  background-size: contain;
-  border-style: dashed;
-  height: 10rem;
-}
-
-/* ------------------ NAV ------------------ */
-nav img {
-  width: 5rem;
-  margin-left: 5rem;
-}
-
-nav ul {
-  padding: 0.5rem;
-  list-style: none;
-}
-
-nav ul li {
-  list-style-type: none;
-  padding: 0.5rem 2rem;
-  border-radius: 50px;
-}
-
-nav ul li a {
-  text-decoration: none;
-}
-
-nav ul li #activoNgr {
-  color: black;
-}
-
-nav ul .activo {
-  background-color: wheat;
-  font-weight: bold;
-}
-
-/* ------------------ MAIN ------------------ */
-h1 {
-  font-weight: bold;
-  text-transform: uppercase;
-  font-size: 4rem;
-  text-align: center;
-  padding: 10px;
-  -webkit-animation-duration: 3s;
-          animation-duration: 3s;
-  -webkit-animation-name: aparecer;
-          animation-name: aparecer;
-}
-
-@-webkit-keyframes aparecer {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes aparecer {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-.info {
-  padding: 5px 1rem;
-  margin-bottom: 2.5rem;
-}
-
-.info .info__titulo {
-  text-decoration: underline;
-  text-align: center;
-}
-
-.info .info__titulo--primary {
-  font-size: 4rem;
-  padding: 1rem;
-  color: #0862b6;
-}
-
-.info .info__titulo--secondary {
-  font-weight: bold;
-  font-size: 3rem;
-  color: #0b6d3c;
-}
-
-.info .info__texto {
-  padding: 5px;
-  margin: 5px;
-  font-weight: bold;
-}
-
-.info .info__texto--primary {
-  font-size: 1.8rem;
-  line-height: 2.5rem;
-}
-
-.info .info__lista {
-  font-weight: bold;
-  font-size: 1.5rem;
-  line-height: 2rem;
-}
-
-.info .info__link {
-  text-decoration: none;
-  color: black;
-}
-
-.info .info__link:hover {
-  color: red;
-}
-
-.info .info__img {
-  border-radius: 5px;
-}
-
-.info .info__img--primary {
-  width: 65%;
-  margin: 3rem;
-  -webkit-box-shadow: 5px 5px 10px;
-          box-shadow: 5px 5px 10px;
-}
-
-.info .info__img--secondary {
-  color: black;
-  -webkit-box-shadow: 5px 5px 10px;
-          box-shadow: 5px 5px 10px;
-  width: 50%;
-  margin-top: 2rem;
-}
-
-.info .info__img--secondary:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-}
-
-.info .info__img--terciary {
-  width: 50%;
-  margin: 1.5rem;
-}
-
-.extra {
-  margin: 3rem 0rem;
-  padding: 2rem;
-  background-image: url("../imagenes/Fondo_negro.jpg");
-  background-size: contain;
-  border-radius: 30px;
-}
-
-.extra .extra__titulo--primary {
-  font-size: 2.5rem;
-  padding: 1rem;
-  color: wheat;
-}
-
-.extra .extra__img {
-  margin: 1rem 0rem;
-  width: 100%;
-}
-
-.extra .extra__img--primary {
-  width: 95%;
-}
-
-.extra .extra__video {
-  width: 60%;
-  padding: 1rem;
-}
-
-/* ------------------ FOOTER ------------------ */
-.pie {
-  background-color: black;
-  border-top: solid;
-  text-align: center;
-}
-
-.pie .pie__titulo {
-  font-weight: bold;
-  color: #495057;
-}
-
-.pie .pie__texto {
-  font-size: 2rem;
-  color: #495057;
-}
-
-.pie .btn--blanco {
-  color: white;
-}
-
-/* ------------------ 404 ------------------ */
-.error {
-  background-image: url("../imagenes/Enlace_roto.jpg");
-  background-size: contain;
-}
-
-.error .error_titulo {
-  width: 20rem;
-  background-color: wheat;
-  color: red;
-}
-
-.error .error__texto {
-  font-weight: bold;
-  background-color: white;
-  font-size: 3rem;
-  color: black;
-  padding: 2rem;
-}
-
-.error .error__link {
-  text-decoration: none;
-  color: black;
-}
-
-.error .error__link:hover {
-  color: red;
-}
-
 #losElementos {
   display: -ms-grid;
   display: grid;
@@ -268,72 +28,227 @@ h1 {
           box-shadow: 5px 5px 10px;
 }
 
-.Tigre-icon {
-  background-image: url("../imagenes/Tigre.jpg");
-  height: 5rem;
-  background-size: contain;
-  border: dashed;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-.Serpiente-icon {
-  background-image: url("../imagenes/Serpiente.jpg");
-  height: 5rem;
-  background-size: contain;
-  border: dashed;
+html {
+  font-size: 62.5%;
 }
 
-.Tortuga-icon {
-  background-image: url("../imagenes/Tortuga.jpg");
-  height: 5rem;
-  background-size: contain;
-  border: dashed;
+html body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.5rem;
+  background-color: gainsboro;
 }
 
-.Oso-icon {
-  background-image: url("../imagenes/Oso.jpg");
-  height: 5rem;
-  background-size: contain;
-  border: dashed;
+/* ------------------ NAV ------------------ */
+nav {
+  padding: 3rem;
 }
 
-.Ciervo-icon {
-  background-image: url("../imagenes/Ciervo.jpg");
-  height: 5rem;
-  background-size: contain;
-  border: dashed;
+nav img {
+  width: 8rem;
+  margin-left: 2rem;
 }
 
-.Zorro-icon {
-  background-image: url("../imagenes/Zorro.jpg");
-  height: 5rem;
+nav ul {
+  padding: 0.5rem;
+  list-style: none;
+}
+
+nav ul li {
+  list-style-type: none;
+  padding: 0.5rem 2rem;
+  border-radius: 50px;
+}
+
+nav ul li a {
+  text-decoration: none;
+}
+
+nav ul li #activoNgr {
+  color: black;
+}
+
+nav ul .activo {
+  background-color: #F5DEB3;
+  font-weight: bold;
+}
+
+/* ------------------ MAIN ------------------ */
+.info {
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+
+.info .info__titulo {
+  text-decoration: underline;
+  text-align: center;
+}
+
+.info .info__titulo--primary {
+  font-size: 4rem;
+  margin: 1rem;
+  padding: 1rem;
+  color: #6A252F;
+  font-weight: bold;
+}
+
+.info .info__titulo--secondary {
+  font-size: 3rem;
+  color: #6A252F;
+}
+
+.info .info__texto {
+  padding: 1rem;
+  margin: 1rem;
+  font-size: 2.5rem;
+  text-align: center;
+  line-height: 2.5rem;
+}
+
+.info .info__lista {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.info .info__link {
+  text-decoration: none;
+  color: black;
+}
+
+.info .info__link:hover {
+  color: red;
+}
+
+.info .info__img {
+  border-radius: 3rem;
+  -webkit-box-shadow: 5px 5px 10px;
+          box-shadow: 5px 5px 10px;
+}
+
+.info .info__img--primary {
+  width: 100%;
+  margin-top: 3rem;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.info .info__img--secondary {
+  color: black;
+  width: 50%;
+  margin: 2rem;
+}
+
+.info .info__img--secondary:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.info .info__img--terciary {
+  width: 50%;
+  margin: 1.5rem;
+}
+
+.extra {
+  margin: 3rem 0rem;
+  padding: 2rem;
+  background-image: url("../imagenes/Fondo_negro.jpg");
   background-size: contain;
-  border: dashed;
+}
+
+.extra .extra__titulo--primary {
+  font-size: 3rem;
+  padding: 1rem;
+  color: #F5DEB3;
+}
+
+.extra .extra__img {
+  border-radius: 3rem;
+  padding: 1rem;
+  margin: 2rem 0rem;
+  width: 100%;
+}
+
+.extra .extra__img--primary {
+  width: 95%;
+}
+
+.extra .extra__video {
+  width: 60%;
+  padding: 1rem;
+}
+
+/* ------------------ FOOTER ------------------ */
+.pie {
+  background-color: black;
+  border-top: solid;
+  text-align: center;
+  padding: 2rem;
+  font-size: 2rem;
+}
+
+.pie .pie__titulo {
+  font-weight: bold;
+  color: #495057;
+}
+
+.pie .pie__texto {
+  color: #495057;
+}
+
+.pie .btn--blanco {
+  color: gainsboro;
+}
+
+/* ------------------ 404 ------------------ */
+.error {
+  background-image: url("../imagenes/Enlace_roto.jpg");
+  background-size: contain;
+}
+
+.error .error_titulo {
+  width: 20rem;
+  background-color: #F5DEB3;
+  color: red;
+}
+
+.error .error__texto {
+  font-weight: bold;
+  background-color: gainsboro;
+  font-size: 3rem;
+  color: black;
+  padding: 2rem;
+}
+
+.error .error__link {
+  text-decoration: none;
+  color: black;
+}
+
+.error .error__link:hover {
+  color: red;
+}
+
+/* ------------------ MAPAS ------------------ */
+.btn--facebook {
+  background-color: #3a5795;
+}
+
+.btn--instagram {
+  background-color: #3f729b;
+}
+
+.btn--whatsapp {
+  background-color: #00bb2d;
 }
 
 @media only screen and (min-width: 768px) {
-  .Tigre-icon {
-    height: 12rem;
-  }
-  .Serpiente-icon {
-    height: 12rem;
-  }
-  .Tortuga-icon {
-    height: 12rem;
-  }
-  .Oso-icon {
-    height: 12rem;
-  }
-  .Ciervo-icon {
-    height: 12rem;
-  }
-  .Zorro-icon {
-    height: 12rem;
-  }
-  .info__img--primary {
-    height: 55%;
-    -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
+  .info .info__texto {
+    font-size: 2.3rem;
   }
   #losElementos {
     -ms-grid-columns: 50% 50%;
@@ -389,26 +304,8 @@ h1 {
 }
 
 @media only screen and (min-width: 1024px) {
-  .Tigre-icon {
-    height: 15rem;
-  }
-  .Serpiente-icon {
-    height: 15rem;
-  }
-  .Tortuga-icon {
-    height: 15rem;
-  }
-  .Oso-icon {
-    height: 15rem;
-  }
-  .Ciervo-icon {
-    height: 15rem;
-  }
-  .Zorro-icon {
-    height: 15rem;
-  }
-  .info__img--primary {
-    height: auto;
+  .info .info__texto {
+    font-size: 2rem;
   }
   #losElementos {
     -ms-grid-columns: 50% 50%;
@@ -420,20 +317,20 @@ h1 {
             align-items: center;
   }
   #agua {
-    -ms-grid-column-align: right;
-        justify-self: right;
-    -webkit-box-ordinal-group: 2;
-        -ms-flex-order: 1;
-            order: 1;
-  }
-  #agua-texto {
+    -ms-grid-column-align: center;
+        justify-self: center;
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
             order: 2;
   }
+  #agua-texto {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
   #fuego {
-    -ms-grid-column-align: left;
-        justify-self: left;
+    -ms-grid-column-align: center;
+        justify-self: center;
     -webkit-box-ordinal-group: 5;
         -ms-flex-order: 4;
             order: 4;
@@ -444,20 +341,20 @@ h1 {
             order: 3;
   }
   #aire {
-    -ms-grid-column-align: right;
-        justify-self: right;
-    -webkit-box-ordinal-group: 6;
-        -ms-flex-order: 5;
-            order: 5;
-  }
-  #aire-texto {
+    -ms-grid-column-align: center;
+        justify-self: center;
     -webkit-box-ordinal-group: 7;
         -ms-flex-order: 6;
             order: 6;
   }
+  #aire-texto {
+    -webkit-box-ordinal-group: 6;
+        -ms-flex-order: 5;
+            order: 5;
+  }
   #tierra {
-    -ms-grid-column-align: left;
-        justify-self: left;
+    -ms-grid-column-align: center;
+        justify-self: center;
     -webkit-box-ordinal-group: 9;
         -ms-flex-order: 8;
             order: 8;
@@ -467,17 +364,5 @@ h1 {
         -ms-flex-order: 7;
             order: 7;
   }
-}
-
-.btn--facebook {
-  background-color: #3a5795;
-}
-
-.btn--instagram {
-  background-color: #3f729b;
-}
-
-.btn--whatsapp {
-  background-color: #00bb2d;
 }
 /*# sourceMappingURL=styles.css.map */

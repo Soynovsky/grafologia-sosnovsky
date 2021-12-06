@@ -1,21 +1,30 @@
 * { margin: 0; padding: 0;}
 
-/* ------------------ HEADER ------------------ */
-
-header {
-    background-image: 
-    url("../imagenes/Banner.jpg");
-    background-size: contain;
-    border-style: dashed;
-    height: 10rem;
+html { 
+    font-size: 62.5%;
+    body { 
+        font-family: 'Montserrat', sans-serif; 
+        font-size: 1.5rem;
+        background-color: $color-claro;
+    }
 }
+
+$text-uppercase: uppercase;
+$text-underline: underline;
+$font-bold: bold;
+$font-italic: italic;
+
+$height-360: 5rem;
+$height-768: 12rem;
+$height-1024: 15rem;
 
 /* ------------------ NAV ------------------ */
 
 nav {
+    padding: 3rem;
     img {
-        width: 5rem;
-        margin-left: 5rem;
+        width: 8rem;
+        margin-left: 2rem;
     }
     ul {
         padding: 0.5rem;
@@ -40,52 +49,32 @@ nav {
 
 /* ------------------ MAIN ------------------ */
 
-h1 {
-    font-weight: $font-bold;
-    text-transform: $text-uppercase;
-    font-size: 4rem;
-    text-align: center;
-    padding: 10px;
-    animation-duration: 3s;
-    animation-name: aparecer;
-    @keyframes aparecer {
-        0% {
-            opacity: 0;
-        }
-        100% {
-            opacity: 1;
-        }
-    }
-}
-
 .info {
-    padding: 5px 1rem;
-    margin-bottom: 2.5rem;
+    padding: 2rem;
+    margin-bottom: 2rem;
     .info__titulo {
         text-decoration: $text-underline;
         text-align: center;
     }
     .info__titulo--primary {
         font-size: 4rem;
+        margin: 1rem;
         padding: 1rem;
-        color: $color-azul;
+        color: $color-bordo;
+        font-weight: $font-bold;
     }
     .info__titulo--secondary {
-        font-weight: $font-bold;
         font-size: 3rem;
-        color: $color-verde
+        color: $color-bordo
     }
     .info__texto {
-        padding: 5px;
-        margin: 5px;
-        font-weight: $font-bold;
-    }
-    .info__texto--primary {
-        font-size: 1.8rem;
+        padding: 1rem;
+        margin: 1rem;
+        font-size: 2.5rem;
+        text-align: center;
         line-height: 2.5rem;
     }
     .info__lista {
-        font-weight: $font-bold;
         font-size: 1.5rem;
         line-height: 2rem;
     }
@@ -97,18 +86,18 @@ h1 {
         }
     }
     .info__img {
-        border-radius: 5px;
+        @include bordes;
+        @include sombras;
     }
     .info__img--primary {
-        width: 65%;
-        margin: 3rem;
-        @include sombras;
+        width: 100%;
+        margin-top: 3rem;
+        align-self: center;
     }
     .info__img--secondary {
         color: $color-negro;
-        @include sombras;
         width: 50%;
-        margin-top: 2rem;
+        margin: 2rem;
         &:hover {
             transform: scale(1.1);
         }
@@ -125,14 +114,15 @@ h1 {
     background-image: 
     url("../imagenes/Fondo_negro.jpg");
     background-size: contain;
-    border-radius: 30px;
     .extra__titulo--primary {
-        font-size: 2.5rem;
+        font-size: 3rem;
         padding: 1rem;
         color: $color-wheat;
     }
     .extra__img {
-        margin: 1rem 0rem;
+        @include bordes;
+        padding: 1rem;
+        margin: 2rem 0rem;
         width: 100%;
     }
     .extra__img--primary {
@@ -150,16 +140,17 @@ h1 {
     background-color: $color-negro;
     border-top: solid;
     text-align: center;
+    padding: 2rem;
+    font-size: 2rem;
     .pie__titulo {
         font-weight: $font-bold;
         color: $color-gris;
     }
     .pie__texto {
-        font-size: 2rem;
         color: $color-gris;
     }
     .btn--blanco {
-        color: $color-blanco;
+        color: $color-claro;
     }
 }
 
@@ -176,7 +167,7 @@ h1 {
     }
     .error__texto {
         font-weight: $font-bold;
-        background-color: $color-blanco;
+        background-color: $color-claro;
         font-size: 3rem;
         color: $color-negro;
         padding: 2rem;
@@ -187,5 +178,19 @@ h1 {
         &:hover {
             color: $color-rojo;
         }
+    }
+}
+
+/* ------------------ MAPAS ------------------ */
+
+$redes: (
+    facebook: #3a5795,
+    instagram: #3f729b,
+    whatsapp: #00bb2d,
+);
+
+@each $red, $color in $redes {
+    .btn--#{$red} {
+        background-color: $color;
     }
 }

@@ -1,38 +1,11 @@
 
-// ----------------- EACH
-
-@each $animal in Tigre, Serpiente, Tortuga, Oso, Ciervo, Zorro {
-    .#{$animal}-icon {
-        background-image: 
-        url("../imagenes/#{$animal}.jpg");
-        height: $height-360;
-        background-size: contain;
-        border: dashed;
-    }
-}
+// ----------------- SCREEN 768PX -----------------
 
 @media only screen and (min-width: 768px) {
-    .Tigre-icon {
-        height: $height-768;
-    }
-    .Serpiente-icon {
-        height: $height-768;
-    }
-    .Tortuga-icon {
-        height: $height-768;
-    }
-    .Oso-icon {
-        height: $height-768;
-    }
-    .Ciervo-icon {
-        height: $height-768;
-    }
-    .Zorro-icon {
-        height: $height-768;
-    }
-    .info__img--primary {
-        height: 55%;
-        align-self: center;
+    .info {
+        .info__texto {
+            font-size: 2.3rem;
+        }
     }
     #losElementos {
         grid-template-columns: 50% 50%;
@@ -66,27 +39,13 @@
     }
 }
 
+// ----------------- SCREEN 1024PX -----------------
+
 @media only screen and (min-width: 1024px) {
-    .Tigre-icon {
-        height: $height-1024;
-    }
-    .Serpiente-icon {
-        height: $height-1024;
-    }
-    .Tortuga-icon {
-        height: $height-1024;
-    }
-    .Oso-icon {
-        height: $height-1024;
-    }
-    .Ciervo-icon {
-        height: $height-1024;
-    }
-    .Zorro-icon {
-        height: $height-1024;
-    }
-    .info__img--primary {
-        height: auto;
+    .info {
+        .info__texto {
+            font-size: 2rem;
+        }
     }
     #losElementos {
         grid-template-columns: 50% 50%;
@@ -94,45 +53,31 @@
         align-items: center;
     }
     #agua {
-        justify-self: right;
-        order: 1;
-    }
-    #agua-texto {
+        justify-self: center;
         order: 2;
     }
+    #agua-texto {
+        order: 1;
+    }
     #fuego {
-        justify-self: left;
+        justify-self: center;
         order: 4;
     }
     #fuego-texto {
         order: 3;
     }
     #aire {
-        justify-self: right;
-        order: 5;
-    }
-    #aire-texto {
+        justify-self: center;
         order: 6;
     }
+    #aire-texto {
+        order: 5;
+    }
     #tierra {
-        justify-self: left;
+        justify-self: center;
         order: 8;
     }
     #tierra-texto {
         order: 7;
-    }
-}
-
-// ----------------- MAPAS
-
-$redes: (
-    facebook: #3a5795,
-    instagram: #3f729b,
-    whatsapp: #00bb2d,
-);
-
-@each $red, $color in $redes {
-    .btn--#{$red} {
-        background-color: $color;
     }
 }
