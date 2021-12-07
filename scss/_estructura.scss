@@ -65,7 +65,9 @@ nav {
     }
     .info__titulo--secondary {
         font-size: 3rem;
-        color: $color-bordo
+        margin: 1rem;
+        padding: 1rem;
+        color: $color-verde;
     }
     .info__texto {
         padding: 1rem;
@@ -76,13 +78,13 @@ nav {
     }
     .info__lista {
         font-size: 1.5rem;
-        line-height: 2rem;
+        margin: 0.5rem 1rem;
     }
     .info__link {
         text-decoration: none;
         color: $color-negro;
         &:hover {
-            color: $color-rojo;
+            color: $color-bordo;
         }
     }
     .info__img {
@@ -104,7 +106,7 @@ nav {
     }
     .info__img--terciary {
         width: 50%;
-        margin: 1.5rem;
+        margin: 2rem;
     }
 }
 
@@ -132,6 +134,31 @@ nav {
         width: 60%;
         padding: 1rem;
     }
+}
+
+/* ------------------ GRID ------------------ */
+
+#losElementos {
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+}
+
+#agua {
+    @include sombras;
+}
+
+#fuego {
+    @include sombras;
+}
+
+#aire {
+    @include sombras;
+}
+
+#tierra {
+    @include sombras;
 }
 
 /* ------------------ FOOTER ------------------ */
@@ -163,7 +190,7 @@ nav {
     .error_titulo {
         width: 20rem;
         background-color: $color-wheat;
-        color: $color-rojo;
+        color: $color-bordo;
     }
     .error__texto {
         font-weight: $font-bold;
@@ -176,7 +203,7 @@ nav {
         text-decoration: none;
         color: $color-negro;
         &:hover {
-            color: $color-rojo;
+            color: $color-bordo;
         }
     }
 }

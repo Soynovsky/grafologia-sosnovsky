@@ -1,33 +1,3 @@
-#losElementos {
-  display: -ms-grid;
-  display: grid;
-  justify-items: center;
-  -ms-grid-columns: 100%;
-      grid-template-columns: 100%;
-  -ms-grid-rows: auto;
-      grid-template-rows: auto;
-}
-
-#agua {
-  -webkit-box-shadow: 5px 5px 10px;
-          box-shadow: 5px 5px 10px;
-}
-
-#fuego {
-  -webkit-box-shadow: 5px 5px 10px;
-          box-shadow: 5px 5px 10px;
-}
-
-#aire {
-  -webkit-box-shadow: 5px 5px 10px;
-          box-shadow: 5px 5px 10px;
-}
-
-#tierra {
-  -webkit-box-shadow: 5px 5px 10px;
-          box-shadow: 5px 5px 10px;
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -98,7 +68,9 @@ nav ul .activo {
 
 .info .info__titulo--secondary {
   font-size: 3rem;
-  color: #6A252F;
+  margin: 1rem;
+  padding: 1rem;
+  color: #3e5e04;
 }
 
 .info .info__texto {
@@ -111,7 +83,7 @@ nav ul .activo {
 
 .info .info__lista {
   font-size: 1.5rem;
-  line-height: 2rem;
+  margin: 0.5rem 1rem;
 }
 
 .info .info__link {
@@ -120,7 +92,7 @@ nav ul .activo {
 }
 
 .info .info__link:hover {
-  color: red;
+  color: #6A252F;
 }
 
 .info .info__img {
@@ -150,7 +122,7 @@ nav ul .activo {
 
 .info .info__img--terciary {
   width: 50%;
-  margin: 1.5rem;
+  margin: 2rem;
 }
 
 .extra {
@@ -180,6 +152,37 @@ nav ul .activo {
 .extra .extra__video {
   width: 60%;
   padding: 1rem;
+}
+
+/* ------------------ GRID ------------------ */
+#losElementos {
+  display: -ms-grid;
+  display: grid;
+  justify-items: center;
+  -ms-grid-columns: 100%;
+      grid-template-columns: 100%;
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+}
+
+#agua {
+  -webkit-box-shadow: 5px 5px 10px;
+          box-shadow: 5px 5px 10px;
+}
+
+#fuego {
+  -webkit-box-shadow: 5px 5px 10px;
+          box-shadow: 5px 5px 10px;
+}
+
+#aire {
+  -webkit-box-shadow: 5px 5px 10px;
+          box-shadow: 5px 5px 10px;
+}
+
+#tierra {
+  -webkit-box-shadow: 5px 5px 10px;
+          box-shadow: 5px 5px 10px;
 }
 
 /* ------------------ FOOTER ------------------ */
@@ -213,7 +216,7 @@ nav ul .activo {
 .error .error_titulo {
   width: 20rem;
   background-color: #F5DEB3;
-  color: red;
+  color: #6A252F;
 }
 
 .error .error__texto {
@@ -230,7 +233,7 @@ nav ul .activo {
 }
 
 .error .error__link:hover {
-  color: red;
+  color: #6A252F;
 }
 
 /* ------------------ MAPAS ------------------ */
@@ -324,6 +327,8 @@ nav ul .activo {
             order: 2;
   }
   #agua-texto {
+    -ms-grid-column-align: start;
+        justify-self: start;
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
             order: 1;
