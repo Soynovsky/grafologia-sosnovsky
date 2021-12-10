@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="elementos, tatuajes, oráculo, cosmovisión, chamánico, cartas">
+    <meta name="description" content="Aprende mucho más analizando tus tatuajes o tu relación con los 4 elementos. También podes acompañar el análisis de tu firma con una tirada de cartas del oráculo de cosmovisión chamánica">
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,800;1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.0/font/bootstrap-icons.css">
+    <title>Elementos | Tatuajes | Oráculo</title>
+</head>
+<body>
+    <!-- HEADER/NAV -->
+    <header class="sticky-top">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="index.html"><img src="imagenes/Logo.png" alt="logo_grafologiasol"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav justify-content-end w-100">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="grafo_tips.html">Grafo Tips</a>
+                    </li>
+                    <li class="nav-item activo">
+                        <a class="nav-link" id="activoNgr" href="otras_opciones.html">Otras opciones</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="curiosidades.html">Curiosidades</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- MAIN -->
+    <div class="container-fluid">
+            <section class="info">
+                <h1 class="info__titulo info__titulo--primary">Somos seres elementales</h1>
+                <div class="container" id="losElementos">
+                    <img src="imagenes/Elemento_agua.jpg" alt="Elemento_agua" title="imagen" class="info__img info__img--terciary" id="agua"/>
+                    <div id="agua-texto">
+                    <h3 class="info__titulo info__titulo--secondary">AGUA</h3>
+                        <ul>
+                            <li class="info__lista">Fluir, figura materna, emociones.</li>
+                            <li class="info__lista">Representa el oeste.</li>
+                            <li class="info__lista">Trazos flexibles, livianos,que se dirigen hacia la izquierda.</li>
+                            <li class="info__lista">Observar las letras que tienen óvalos.</li>
+                            <li class="info__lista">Letras: A, B, D, G, J, M, N, O, P</li>
+                            <li class="info__lista">¿Sos de las personas que le gusta el mar, el río, nadar?</li>
+                        </ul>
+                    </div>
+                    <img src="imagenes/Elemento_fuego.jpg" alt="Elemento_fuego" title="imagen" class="info__img info__img--terciary" id="fuego"/>
+                    <div id="fuego-texto">
+                    <h3 class="info__titulo info__titulo--secondary">FUEGO</h3>
+                        <ul>
+                            <li class="info__lista">Pasión, Acción, Ímpetu</li>
+                            <li class="info__lista">Simboliza el norte</li>
+                            <li class="info__lista">Los trazos suelen ser con mucha presión y agilidad.</li>
+                            <li class="info__lista">Se dirigen hacia arriba y derecha.</li>
+                            <li class="info__lista">Son personas que encienden los motores, chispitas, audaces, que prenden la llama, hot.</li>
+                            <li class="info__lista">¿Sos de las personas que les gusta el fuego, que les gusta jugar con fuego? Como dijo Galeano: "somos un mar de fueguitos".</li>
+                        </ul>
+                    </div>
+                    <img src="imagenes/Elemento_aire.jpg" alt="Elemento_aire" title="imagen" class="info__img info__img--terciary" id="aire"/>
+                    <div id="aire-texto">
+                    <h3 class="info__titulo info__titulo--secondary">AIRE</h3>
+                        <ul>
+                            <li class="info__lista">Mente, Libertad, Creatividad.</li>
+                            <li class="info__lista">Representa el este.</li>
+                            <li class="info__lista">Trazos livianos, finos y desapegados, letras ligadas entre sí</li>
+                            <li class="info__lista">Observar las letras que tienen óvalos.</li>
+                            <li class="info__lista">Se relaciona con el color amarillo</li>
+                            <li class="info__lista">¿Sos de esas personas que se sienten identificadas con el elemento aire, te gusta estar al aire libre?</li>
+                        </ul>
+                    </div>
+                    <img src="imagenes/Elemento_tierra.jpg" alt="Elemento_tierra" title="imagen" class="info__img info__img--terciary" id="tierra"/>
+                    <div id="tierra-texto">
+                        <h3 class="info__titulo info__titulo--secondary">TIERRA</h3>
+                            <ul>
+                                <li class="info__lista">Naturaleza, Ser, Raíz, Fertilidad</li>
+                                <li class="info__lista">Representa el sur.</li>
+                                <li class="info__lista">Trazos que parten de zona baja y se expanden, necesitan estar estables, sobre la línea.</li>
+                                <li class="info__lista">Letras que se dirigen hacia abajo.</li>
+                                <li class="info__lista">Representa el color verde</li>
+                                <li class="info__lista">¿Sos de las personas que prefieren la estabilidad de tener los pies en la tierra?</li>
+                            </ul>
+                    </div>
+                </div>
+            </section>
+
+        <!-- CORTE -->
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-2 col-lg-2">
+                    <div class="Tigre-icon border-4"></div>
+                </div>
+                <div class="col-2 col-lg-2">
+                    <div class="Serpiente-icon border-4"></div>
+                </div>
+                <div class="col-2 col-lg-2">
+                    <div class="Tortuga-icon border-4"></div>
+                </div>
+                <div class="col-2 col-lg-2">
+                    <div class="Oso-icon border-4"></div>
+                </div>
+                <div class="col-2 col-lg-2">
+                    <div class="Ciervo-icon border-4"></div>
+                </div>
+                <div class="col-2 col-lg-2">
+                    <div class="Zorro-icon border-4"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- EXTRA -->     
+        <div class="container-fluid">
+            <div class="row">
+                <section class="info col-12 col-lg-7" id="tatuajes">
+                    <h2 class="info__titulo info__titulo--primary">La grafologia y los tatuajes</h2>
+                        <div class="col-12">
+                            <p class="info__texto">Desde la grafología (también) acompañamos el proceso de conocimiento propio a partir de los tatuajes.</p>
+                            <p class="info__texto">Sí,leíste bien: tatuajes.</p>
+                            <p class="info__texto">Se analiza: forma, figura, tamaño, colores (en el caso que aparezcan), ubicación espacial, simbologías y mucho más.</p>
+                            <p class="info__texto">Desde ya, la elección del tatoo es única y se respeta. Simplemente vamos a ir más profundo.</p>
+                            <img src="imagenes/Tatuaje.webp" alt="tatuajes" title="imagen" class="info__img info__img--primary">
+                        </div>
+                </section>
+                    <div class="col-12 col-lg-5">
+                        <aside class="extra">
+                            <img src="imagenes/los-tatuajes.jpg" alt="Los-tatuajes" title="imagen" class="extra__img extra__img--primary">
+                        </aside>
+                    </div>
+            </div>
+        </div>
+
+    <!-- FOOTER -->
+    <footer class="pie container-fluid py-3 mt-3 dark">
+        <div class="col-12">
+            <h4 class="pie__titulo">&#169; Copyright 2021 | Todos los derechos tienen izquierdos.</h4>
+                <p class="pie__texto">Seguime en las redes:</p>
+        </div>
+        <div class="col-12 fs-2">
+            <a href="https://www.instagram.com/grafologiasol/" class="btn btn--blanco btn--instagram">Instagram
+                <i class="bi-instagram btn--blanco"></i>
+            </a>
+            <a href="#" class="btn btn--blanco btn--whatsapp">Whatsapp
+                <i class="bi-whatsapp btn--blanco"></i>
+            </a>
+            <a href="https://www.facebook.com/grafologiasol-105597641221980" class="btn btn--blanco btn--facebook">Facebook
+                <i class="bi-facebook btn--blanco"></i>
+            </a>
+        </div>
+    </footer>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -68,7 +68,10 @@ nav {
         margin: 1rem;
         padding: 1rem;
         color: $color-verde;
+<<<<<<< HEAD
         text-decoration: $text-underline;
+=======
+>>>>>>> c3bf829c936820a4d8a7d5010aad7e108013fbd1
     }
     .info__texto {
         padding: 1rem;
@@ -86,7 +89,11 @@ nav {
         background-color: $color-wheat;
     }
     .info__lista {
+<<<<<<< HEAD
         font-size: 2.5rem;
+=======
+        font-size: 1.5rem;
+>>>>>>> c3bf829c936820a4d8a7d5010aad7e108013fbd1
         margin: 0.5rem 1rem;
     }
     .info__link {
@@ -113,7 +120,11 @@ nav {
         }
     }
     .info__img--terciary {
+<<<<<<< HEAD
         width: 75%;
+=======
+        width: 50%;
+>>>>>>> c3bf829c936820a4d8a7d5010aad7e108013fbd1
         margin: 2rem;
     }
 }
@@ -147,13 +158,19 @@ nav {
 }
 
 /* ------------------ GRID ------------------ */
+<<<<<<< HEAD
 .extra__grid {
+=======
+
+#losElementos {
+>>>>>>> c3bf829c936820a4d8a7d5010aad7e108013fbd1
     display: grid;
     justify-items: center;
     grid-template-columns: 100%;
     grid-template-rows: auto;
 }
 
+<<<<<<< HEAD
 .extra__grid--grande {
     display: grid;
     justify-items: center;
@@ -174,6 +191,22 @@ nav {
     align-items: center;
     grid-template-columns: 100%;
     grid-template-rows: auto;
+=======
+#agua {
+    @include sombras;
+}
+
+#fuego {
+    @include sombras;
+}
+
+#aire {
+    @include sombras;
+}
+
+#tierra {
+    @include sombras;
+>>>>>>> c3bf829c936820a4d8a7d5010aad7e108013fbd1
 }
 
 /* ------------------ FOOTER ------------------ */
