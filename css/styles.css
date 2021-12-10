@@ -71,10 +71,7 @@ nav ul .activo {
   margin: 1rem;
   padding: 1rem;
   color: #3e5e04;
-<<<<<<< HEAD
   text-decoration: underline;
-=======
->>>>>>> c3bf829c936820a4d8a7d5010aad7e108013fbd1
 }
 
 .info .info__texto {
@@ -96,11 +93,7 @@ nav ul .activo {
 }
 
 .info .info__lista {
-<<<<<<< HEAD
   font-size: 2.5rem;
-=======
-  font-size: 1.5rem;
->>>>>>> c3bf829c936820a4d8a7d5010aad7e108013fbd1
   margin: 0.5rem 1rem;
 }
 
@@ -136,11 +129,7 @@ nav ul .activo {
 }
 
 .info .info__img--terciary {
-<<<<<<< HEAD
   width: 75%;
-=======
-  width: 50%;
->>>>>>> c3bf829c936820a4d8a7d5010aad7e108013fbd1
   margin: 2rem;
 }
 
@@ -179,11 +168,7 @@ nav ul .activo {
 }
 
 /* ------------------ GRID ------------------ */
-<<<<<<< HEAD
 .extra__grid {
-=======
-#losElementos {
->>>>>>> c3bf829c936820a4d8a7d5010aad7e108013fbd1
   display: -ms-grid;
   display: grid;
   justify-items: center;
@@ -193,7 +178,6 @@ nav ul .activo {
       grid-template-rows: auto;
 }
 
-<<<<<<< HEAD
 .extra__grid--grande {
   display: -ms-grid;
   display: grid;
@@ -225,26 +209,6 @@ nav ul .activo {
       grid-template-columns: 100%;
   -ms-grid-rows: auto;
       grid-template-rows: auto;
-=======
-#agua {
-  -webkit-box-shadow: 5px 5px 10px;
-          box-shadow: 5px 5px 10px;
-}
-
-#fuego {
-  -webkit-box-shadow: 5px 5px 10px;
-          box-shadow: 5px 5px 10px;
-}
-
-#aire {
-  -webkit-box-shadow: 5px 5px 10px;
-          box-shadow: 5px 5px 10px;
-}
-
-#tierra {
-  -webkit-box-shadow: 5px 5px 10px;
-          box-shadow: 5px 5px 10px;
->>>>>>> c3bf829c936820a4d8a7d5010aad7e108013fbd1
 }
 
 /* ------------------ FOOTER ------------------ */
