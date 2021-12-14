@@ -16,11 +16,7 @@
         justify-content: center;
         align-content: center;
     }
-    .extra__grid--grande {
-        grid-template-columns: 50% 50%;
-        grid-template-rows: auto auto auto;
-    }
-    .otrasOpciones__grid {
+    .otrosServicios__grid {
         grid-template-columns: 50% 50%;
         grid-template-rows: auto auto auto auto;
         justify-content: center;
@@ -53,10 +49,6 @@
     .curiosidades__grid {
         grid-template-columns: 50% 50%;
         grid-template-rows: auto auto auto auto auto;
-    }
-    .extra__grid--grande {
-        grid-template-columns: auto auto auto;
-        grid-template-rows: auto auto auto;
     }
     #trazoFino {
         order: 1;
@@ -99,15 +91,25 @@
             font-size: 2rem;
         }
         .info__lista {
-            font-size: 1.5rem;
+            font-size: 1.8rem;
         }
         .info__img--terciary {
-            width: 50%;
+            width: 55%;
         }
+    }
+    .flexPadre {
+        flex-flow: row nowrap;
+        justify-content: center;
     }
     .extra__grid {
         grid-template-columns: auto auto auto auto;
         grid-template-rows: 100%;
+    }
+    .otrosServicios__grid {
+        grid-template-columns: 50% 50%;
+        grid-template-rows: auto auto auto auto;
+        justify-content: center;
+        align-content: center;
     }
     #agua {
         order: 2;
@@ -133,6 +135,10 @@
     }
     #tierra-texto {
         order: 7;
+    }
+    .curiosidades__grid {
+        grid-template-columns: 50% 50%;
+        grid-template-rows: auto auto auto auto auto;
     }
     #trazoFino {
         order: 2;

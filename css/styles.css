@@ -71,7 +71,7 @@ nav ul .activo {
   margin: 1rem;
   padding: 1rem;
   color: #3e5e04;
-  text-decoration: underline;
+  font-weight: bold;
 }
 
 .info .info__texto {
@@ -92,6 +92,11 @@ nav ul .activo {
   background-color: #F5DEB3;
 }
 
+.info .info__boton:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
 .info .info__lista {
   font-size: 2.5rem;
   margin: 0.5rem 1rem;
@@ -100,10 +105,6 @@ nav ul .activo {
 .info .info__link {
   text-decoration: none;
   color: black;
-}
-
-.info .info__link:hover {
-  color: #6A252F;
 }
 
 .info .info__img {
@@ -136,7 +137,7 @@ nav ul .activo {
 .extra {
   margin: 1rem 0rem;
   padding: 2rem;
-  background-image: url("../imagenes/Fondo_negro.jpg");
+  background-image: url("../imagenes/fondo-negro.webp");
   background-size: contain;
 }
 
@@ -148,9 +149,9 @@ nav ul .activo {
 
 .extra .extra__img {
   border-radius: 3rem;
-  padding: 1rem;
+  padding: 1.5rem;
   margin: 2rem 0rem;
-  width: 95%;
+  width: 100%;
   -webkit-filter: grayscale(75%);
           filter: grayscale(75%);
 }
@@ -162,9 +163,22 @@ nav ul .activo {
           transform: scale(1.1);
 }
 
-.extra .extra__video {
-  width: 60%;
-  padding: 1rem;
+/* ------------------ FLEXBOX ------------------ */
+.flexPadre {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.flexHijo {
+  margin: 1rem;
 }
 
 /* ------------------ GRID ------------------ */
@@ -178,17 +192,7 @@ nav ul .activo {
       grid-template-rows: auto;
 }
 
-.extra__grid--grande {
-  display: -ms-grid;
-  display: grid;
-  justify-items: center;
-  -ms-grid-columns: 100%;
-      grid-template-columns: 100%;
-  -ms-grid-rows: auto;
-      grid-template-rows: auto;
-}
-
-.otrasOpciones__grid {
+.otrosServicios__grid {
   display: -ms-grid;
   display: grid;
   justify-items: center;
@@ -294,13 +298,7 @@ nav ul .activo {
     -ms-flex-line-pack: center;
         align-content: center;
   }
-  .extra__grid--grande {
-    -ms-grid-columns: 50% 50%;
-        grid-template-columns: 50% 50%;
-    -ms-grid-rows: auto auto auto;
-        grid-template-rows: auto auto auto;
-  }
-  .otrasOpciones__grid {
+  .otrosServicios__grid {
     -ms-grid-columns: 50% 50%;
         grid-template-columns: 50% 50%;
     -ms-grid-rows: auto auto auto auto;
@@ -356,12 +354,6 @@ nav ul .activo {
         grid-template-columns: 50% 50%;
     -ms-grid-rows: auto auto auto auto auto;
         grid-template-rows: auto auto auto auto auto;
-  }
-  .extra__grid--grande {
-    -ms-grid-columns: auto auto auto;
-        grid-template-columns: auto auto auto;
-    -ms-grid-rows: auto auto auto;
-        grid-template-rows: auto auto auto;
   }
   #trazoFino {
     -webkit-box-ordinal-group: 2;
@@ -422,16 +414,36 @@ nav ul .activo {
     font-size: 2rem;
   }
   .info .info__lista {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
   }
   .info .info__img--terciary {
-    width: 50%;
+    width: 55%;
+  }
+  .flexPadre {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .extra__grid {
     -ms-grid-columns: auto auto auto auto;
         grid-template-columns: auto auto auto auto;
     -ms-grid-rows: 100%;
         grid-template-rows: 100%;
+  }
+  .otrosServicios__grid {
+    -ms-grid-columns: 50% 50%;
+        grid-template-columns: 50% 50%;
+    -ms-grid-rows: auto auto auto auto;
+        grid-template-rows: auto auto auto auto;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
   }
   #agua {
     -webkit-box-ordinal-group: 3;
@@ -474,6 +486,12 @@ nav ul .activo {
     -webkit-box-ordinal-group: 8;
         -ms-flex-order: 7;
             order: 7;
+  }
+  .curiosidades__grid {
+    -ms-grid-columns: 50% 50%;
+        grid-template-columns: 50% 50%;
+    -ms-grid-rows: auto auto auto auto auto;
+        grid-template-rows: auto auto auto auto auto;
   }
   #trazoFino {
     -webkit-box-ordinal-group: 3;

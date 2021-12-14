@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="../imagenes/Logo.png" sizes="32x32"/>
     <meta name="keywords" content="formulario, contacto, redes, mails, whatsapp">
     <meta name="description" content="Ponte en contacto conmigo para saber más sobre el tema">
     <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -28,10 +29,10 @@
                         <a class="nav-link" href="../index.html">Inicio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="grafo_tips.html">Grafo Tips</a>
+                        <a class="nav-link" href="grafo_info.html">Grafo info</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="otras_opciones.html">Otras opciones</a>
+                        <a class="nav-link" href="otros_servicios.html">Otros servicios</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="curiosidades.html">Curiosidades</a>
@@ -45,37 +46,80 @@
     </header>
 
     <!-- MAIN -->
-    <div class="container">
-        <section class="info">
-            <h1 class="info__titulo info__titulo--primary">Ponete en contacto conmigo</h1>
-            <form class="p-5">
-                <div class="mb-3">
-                    <label title="Nombre" class="form-label">Nombre</label>
-                    <input type="text" class="form-control">
-                </div>
-                <div class="mb-3">
-                    <label for="exampleInputEmail1" class="form-label">Email</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1">
-                </div>
-                <div class="mb-3">
-                    <label title="Teléfono" class="form-label">Teléfono</label>
-                    <input type="tel" class="form-control">
-                </div>
-                <div class="mb-3 form-check">
-                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                    <label class="form-check-label" for="exampleCheck1">Quiero recibir notificaciones en mi correo.</label>
-                </div>
-                <div class="form-floating mb-3">
-                    <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
-                    <label for="floatingTextarea2">Comentarios</label>
-                </div>
-                <div class="col-12 d-flex flex-row d-flex justify-content-around mt-5">
-                    <button type="submit" class="btn btn-primary">Enviar</button>
-                    <button type="reset" class="btn btn-primary">Borrar</button>
-                </div>
-            </form>
-        </section>
-    </div>
+    <section class="info">
+        <h1 class="info__titulo info__titulo--primary">Ponete en contacto conmigo</h1>
+        <div class="row">
+            <div class="col-12 col-md-7">
+                <form class="p-5">
+                    <div class="mb-4">
+                        <label title="Nombre" class="form-label">Nombre/s</label>
+                        <input type="text" class="form-control">
+                    </div>
+                    <div class="mb-4">
+                        <label title="Apellido" class="form-label">Apellido/s</label>
+                        <input type="text" class="form-control">
+                    </div>
+                    <div class="mb-4">
+                        <label for="exampleInputEmail1" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1">
+                    </div>
+                    <div class="mb-4">
+                        <label title="Teléfono" class="form-label">Teléfono</label>
+                        <input type="tel" class="form-control">
+                    </div>
+                    <div class="mb-4">
+                        <label title="Asunto" class="form-label">Asunto</label>
+                        <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+                            <option value="starter" hidden>El motivo de tu consulta</option>
+                            <option value="analisis-de-firma">Análisis de firma</option>
+                            <option value="oraculo">Oráculo grafológico</option>
+                            <option value="los-elementos">Grafología y los 4 elementos</option>
+                            <option value="crea-arte-somos-arte">Crea arte, somos arte</option>
+                            <option value="grafoconciencia">Grafoconciencia</option>
+                            <option value="aranceles">Aranceles</option>
+                            <option value="otros">Otros</option>
+                        </select>
+                    </div>
+                    <div class="mb-4 form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label" for="exampleCheck1">Quiero recibir notificaciones en mi correo.</label>
+                    </div>
+                    <div class="form-floating mb-4">
+                        <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+                        <label for="floatingTextarea2">Comentarios</label>
+                    </div>
+                    <div class="col-12 d-flex flex-row d-flex justify-content-around mt-5">
+                        <button type="submit" class="info__boton">Enviar</button>
+                        <button type="reset" class="info__boton">Borrar</button>
+                    </div>
+                </form>
+            </div>
+            <div class="col-12 col-md-5 d-flex flex-row justify-content-center">
+                <img src="../imagenes/grafologiasol.webp" alt="imagen con logo y nombre" title="imagen" class="info__img info__img--primary"/>
+            </div>
+        </div>
+    </section>
+
+    <section class="extra text-center">
+        <h2 class="extra__titulo">Agradecimientos</h2>
+            <div class="extra__grid">
+                <img src="../imagenes/experiencias-1.webp" alt="agradecimientos por el servicios 1" title="imagen" class="extra__img">
+                <img src="../imagenes/experiencias-2.webp" alt="agradecimientos por el servicios 2" title="imagen" class="extra__img">
+                <img src="../imagenes/experiencias-3.webp" alt="agradecimientos por el servicios 3" title="imagen" class="extra__img">
+                <img src="../imagenes/experiencias-4.webp" alt="agradecimientos por el servicios 4" title="imagen" class="extra__img">
+            </div>
+    </section>
+
+    <section class="info">
+        <h2 class="info__titulo info__titulo--primary">Gift Cards</h2>
+            <p class="info__texto info__texto--primary">No dejes pasar la oportunidad de regalar algo especial, algo diferente, una experiencia única. Regala una gift card totalmente personalizada, es así de simple:</p>
+                <ul>
+                    <li class="info__lista">Elegis una frase, una imagen y/o el color que quieras.</li>
+                    <li class="info__lista">Te envío opciones para que eligas la que más te gusta.</li>
+                    <li class="info__lista">Se la mandas a la persona en cuestión junto a mi contacto de whatsapp o instagram.</li>
+                    <li class="info__lista">¡Listo! Apartir de este momento, yo organizo todo con la persona que recibió el regalo.</li>
+                </ul>
+    </section>
 
 
     <!-- FOOTER -->
