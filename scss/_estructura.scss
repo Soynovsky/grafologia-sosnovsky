@@ -1,8 +1,3 @@
-$text-uppercase: uppercase;
-$text-underline: underline;
-$font-bold: bold;
-$font-italic: italic;
-
 /* ------------------ NAV ------------------ */
 
 nav {
@@ -26,8 +21,8 @@ nav {
             }
         }
         .activo {
+            @include negrita;
             background-color: $color-wheat;
-            font-weight: $font-bold;
         }
     }
 }
@@ -42,28 +37,28 @@ nav {
     }
     .info__titulo--primary {
         font-size: 4rem;
-        margin: 1rem;
+        @include negrita;
+        @include margenes;
         padding-bottom: 1rem;
         color: $color-bordo;
-        font-weight: $font-bold;
         border-bottom: solid $color-gris;
     }
     .info__titulo--secondary {
         font-size: 3rem;
-        margin: 1rem;
+        @include negrita;
+        @include margenes;
         padding: 1rem;
         color: $color-verde;
-        font-weight: $font-bold;
     }
     .info__texto {
         padding: 1rem;
-        margin: 1rem;
+        @include margenes;
         font-size: 2.5rem;
         text-align: center;
         line-height: 2.5rem;
     }
     .info__boton {
-        margin: 1rem;
+        @include margenes;
         padding: 0.5rem 2rem;
         font-size: 2.5rem;
         @include bordes;
@@ -76,6 +71,7 @@ nav {
     .info__lista {
         font-size: 2.5rem;
         margin: 0.5rem 1rem;
+        @include italica;
     }
     .info__link {
         text-decoration: none;
@@ -104,7 +100,7 @@ nav {
 }
 
 .extra {
-    margin: 1rem 0rem;
+    @include margenes;
     padding: 2rem;
     background-image: 
     url("../imagenes/fondo-negro.webp");
@@ -117,7 +113,7 @@ nav {
     .extra__img {
         @include bordes;
         padding: 1.5rem;
-        margin: 2rem 0rem;
+        @include margenes;
         width: 100%;
         filter: grayscale(75%);
         &:hover {
@@ -173,7 +169,7 @@ nav {
     padding: 2rem;
     font-size: 2rem;
     .pie__titulo {
-        font-weight: $font-bold;
+        @include negrita;
         color: $color-gris;
     }
     .pie__texto {
@@ -196,7 +192,7 @@ nav {
         color: $color-bordo;
     }
     .error__texto {
-        font-weight: $font-bold;
+        @include negrita;
         background-color: $color-claro;
         font-size: 3rem;
         color: $color-negro;

@@ -5,3 +5,15 @@
 @mixin bordes {
     border-radius: 3rem;
 }
+
+@mixin negrita {
+    font-weight: bold;
+}
+
+@mixin italica {
+    font-style: italic;
+}
+
+@mixin margenes {
+    margin: 1rem 0rem;
+}

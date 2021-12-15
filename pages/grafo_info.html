@@ -9,6 +9,7 @@
     <meta name="description" content="Tips sobre nuestra escritura, datos sobre lo que escribimos y cómo escribimos">
     <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,800;1,500&display=swap" rel="stylesheet">
@@ -47,14 +48,14 @@
 
     <!-- MAIN -->
     <section class="info">
-        <h1 class="info__titulo info__titulo--primary">La firma</h1>
+        <h1 class="info__titulo info__titulo--primary">INFORMACIÓN GRAFOLÓGICA</h1>
             <p class="info__texto info__texto--primary">La firma es lo más inconciende de nuestra escritura, en ella podemos ver: los vínculos, nuestra forma de pensar, la manera de realizar actividades, la relación con las figuras materna y paterna, las edades que nos marcaron.</p>
             <p class="info__texto info__texto--primary">Es raro que siempre firmemos igual, nuestra energía, humor y ganas van fluctuando. Esto se ve reflejado en la firma o la escritura porque somos humanos.</p>
             <p class="info__texto info__texto--primary">Si todo esto te llama la atención lo que tenes que hacer es simple: sacale una foto a tu firma, me la podes mandar por whatsapp o la red que prefieras, me decis qué pones cuando firmas (iniciales, nombre completo, garabato, etc.) y listo, hago el análisis y te doy una devolución.</p>
             <p class="info__texto info__texto--primary">Como detalle opcional, me podes decir tu edad para hacer una medición de la firma.</p>
     </section>
 
-    <section class="extra text-center">
+    <section data-aos="zoom-in" class="extra text-center">
         <h3 class="extra__titulo">"Firmo siempre distinto"</h3>
             <div class="extra__grid">
                 <img src="../imagenes/la-firma1.webp" alt="info de la firma 1" title="imagen" class="extra__img">
@@ -91,6 +92,10 @@
             <i class="bi-facebook btn--blanco"></i>
         </a>
     </footer>
-    <script src="../bootstrap/js/bootstrap.min.js"></script>
+    <script src="./bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+    AOS.init();
+    </script>
 </body>
 </html>

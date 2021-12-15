@@ -9,6 +9,7 @@
     <meta name="description" content="Aprende mucho más analizando tus tatuajes o tu relación con los 4 elementos. También podes acompañar el análisis de tu firma con una tirada de cartas del oráculo de cosmovisión chamánica">
     <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,800;1,500&display=swap" rel="stylesheet">
@@ -47,12 +48,12 @@
 
     <!-- MAIN -->
     <section class="info">
-        <h1 class="info__titulo info__titulo--primary">Somos seres elementales</h1>
+        <h1 class="info__titulo info__titulo--primary">OTROS SERVICIOS</h1>
         <div class="container otrosServicios__grid">
-            <img src="../imagenes/elemento-agua.webp" alt="info sobre el elemento agua" title="imagen" class="info__img info__img--terciary" id="agua"/>
+            <img data-aos="fade-left" data-aos-delay="500" src="../imagenes/elemento-agua.webp" alt="info sobre el elemento agua" title="imagen" class="info__img info__img--terciary" id="agua"/>
             <div id="agua-texto">
-                <h4 class="info__titulo info__titulo--secondary">AGUA</h4>
-                    <ul>
+                <h4 data-aos="fade-down" class="info__titulo info__titulo--secondary">AGUA</h4>
+                    <ul data-aos="fade-right" data-aos-delay="300">
                         <li class="info__lista">Fluir, figura materna, emociones.</li>
                         <li class="info__lista">Representa el oeste.</li>
                         <li class="info__lista">Trazos flexibles, livianos,que se dirigen hacia la izquierda. Observar las letras que tienen óvalos.</li>
@@ -60,10 +61,10 @@
                         <li class="info__lista">¿Sos de las personas que le gusta el mar, el río, nadar?</li>
                     </ul>
             </div>
-            <img src="../imagenes/elemento-fuego.webp" alt="info sobre el elemento fuego" title="imagen" class="info__img info__img--terciary" id="fuego"/>
+            <img data-aos="fade-left" data-aos-delay="500" src="../imagenes/elemento-fuego.webp" alt="info sobre el elemento fuego" title="imagen" class="info__img info__img--terciary" id="fuego"/>
             <div id="fuego-texto">
-                <h4 class="info__titulo info__titulo--secondary">FUEGO</h4>
-                    <ul>
+                <h4 data-aos="fade-down" class="info__titulo info__titulo--secondary">FUEGO</h4>
+                    <ul data-aos="fade-right" data-aos-delay="300">
                         <li class="info__lista">Pasión, Acción, Ímpetu</li>
                         <li class="info__lista">Simboliza el norte</li>
                         <li class="info__lista">Los trazos suelen ser con mucha presión y agilidad.</li>
@@ -72,10 +73,10 @@
                         <li class="info__lista">¿Sos de las personas que les gusta el fuego, que les gusta jugar con fuego?</li>
                     </ul>
             </div>
-            <img src="../imagenes/elemento-aire.webp" alt="info sobre el elemento aire" title="imagen" class="info__img info__img--terciary" id="aire"/>
+            <img data-aos="fade-left" data-aos-delay="500" src="../imagenes/elemento-aire.webp" alt="info sobre el elemento aire" title="imagen" class="info__img info__img--terciary" id="aire"/>
             <div id="aire-texto">
-                <h4 class="info__titulo info__titulo--secondary">AIRE</h4>
-                    <ul>
+                <h4 data-aos="fade-down" class="info__titulo info__titulo--secondary">AIRE</h4>
+                    <ul data-aos="fade-right" data-aos-delay="300">
                         <li class="info__lista">Mente, Libertad, Creatividad.</li>
                         <li class="info__lista">Representa el este.</li>
                         <li class="info__lista">Trazos livianos, finos y desapegados, letras ligadas entre sí</li>
@@ -84,10 +85,10 @@
                         <li class="info__lista">¿Sos de esas personas que se sienten identificadas con el elemento aire, te gusta estar al aire libre?</li>
                     </ul>
             </div>
-            <img src="../imagenes/elemento-tierra.webp" alt="info sobre el elemento tierra" title="imagen" class="info__img info__img--terciary" id="tierra"/>
+            <img data-aos="fade-left" data-aos-delay="500" src="../imagenes/elemento-tierra.webp" alt="info sobre el elemento tierra" title="imagen" class="info__img info__img--terciary" id="tierra"/>
             <div id="tierra-texto">
-                <h4 class="info__titulo info__titulo--secondary">TIERRA</h4>
-                    <ul>
+                <h4 data-aos="fade-down" class="info__titulo info__titulo--secondary">TIERRA</h4>
+                    <ul data-aos="fade-right" data-aos-delay="300">
                         <li class="info__lista">Naturaleza, Ser, Raíz, Fertilidad</li>
                         <li class="info__lista">Representa el sur.</li>
                         <li class="info__lista">Trazos que parten de zona baja y se expanden, necesitan estar estables, sobre la línea.</li>
@@ -99,7 +100,7 @@
         </div>
     </section>
 
-    <section class="extra text-center">
+    <section data-aos="zoom-in" class="extra text-center">
         <h2 class="extra__titulo">Oráculo grafológico</h2>
             <div class="extra__grid">
                 <img src="../imagenes/Oraculo1.webp" alt="oraculo grafologico 1" title="imagen" class="extra__img">
@@ -138,6 +139,10 @@
             <i class="bi-facebook btn--blanco"></i>
         </a>
     </footer>
-    <script src="../bootstrap/js/bootstrap.min.js"></script>
+    <script src="./bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+    AOS.init();
+    </script>
 </body>
 </html>

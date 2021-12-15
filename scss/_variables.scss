@@ -9,6 +9,9 @@
         .info__lista {
             font-size: 2rem;
         }
+        .info__img--primary {
+            height: 65%;
+        }
     }
     .extra__grid {
         grid-template-columns: 50% 50%;
@@ -92,6 +95,9 @@
         }
         .info__lista {
             font-size: 1.8rem;
+        }
+        .info__img--primary {
+            height: 75%;
         }
         .info__img--terciary {
             width: 55%;

@@ -9,6 +9,7 @@
     <meta name="description" content="Ponte en contacto conmigo para saber más sobre el tema">
     <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,800;1,500&display=swap" rel="stylesheet">
@@ -47,9 +48,9 @@
 
     <!-- MAIN -->
     <section class="info">
-        <h1 class="info__titulo info__titulo--primary">Ponete en contacto conmigo</h1>
+        <h1 class="info__titulo info__titulo--primary">PONETE EN CONTACTO</h1>
         <div class="row">
-            <div class="col-12 col-md-7">
+            <div class="col-12 col-md-6 col-lg-7">
                 <form class="p-5">
                     <div class="mb-4">
                         <label title="Nombre" class="form-label">Nombre/s</label>
@@ -94,13 +95,13 @@
                     </div>
                 </form>
             </div>
-            <div class="col-12 col-md-5 d-flex flex-row justify-content-center">
+            <div class="col-12 col-md-6 col-lg-5 d-flex flex-row justify-content-center">
                 <img src="../imagenes/grafologiasol.webp" alt="imagen con logo y nombre" title="imagen" class="info__img info__img--primary"/>
             </div>
         </div>
     </section>
 
-    <section class="extra text-center">
+    <section data-aos="zoom-in" class="extra text-center">
         <h2 class="extra__titulo">Agradecimientos</h2>
             <div class="extra__grid">
                 <img src="../imagenes/experiencias-1.webp" alt="agradecimientos por el servicios 1" title="imagen" class="extra__img">
@@ -136,6 +137,10 @@
             <i class="bi-facebook btn--blanco"></i>
         </a>
     </footer>
-    <script src="../bootstrap/js/bootstrap.min.js"></script>
+    <script src="./bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+    AOS.init();
+    </script>
 </body>
 </html>
