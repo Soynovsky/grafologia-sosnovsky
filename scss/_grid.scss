@@ -1,0 +1,21 @@
+.extra__grid {
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+}
+
+.otrosServicios__grid {
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+}
+
+.curiosidades__grid {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+}

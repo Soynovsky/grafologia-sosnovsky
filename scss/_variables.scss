@@ -1,13 +1,9 @@
-
 // ----------------- SCREEN 768PX -----------------
 
 @media only screen and (min-width: 768px) {
     .info {
         .info__texto {
             font-size: 2.3rem;
-        }
-        .info__lista {
-            font-size: 2rem;
         }
         .info__img--primary {
             height: 65%;
@@ -84,7 +80,17 @@
     #trazoMarcador-texto {
         order: 9;
     }
+    footer {
+        ul {
+            li {
+                img {
+                    width: 35%;
+                }
+            }
+        }
+    }
 }
+
 
 // ----------------- SCREEN 1024PX -----------------
 
@@ -92,9 +98,6 @@
     .info {
         .info__texto {
             font-size: 2rem;
-        }
-        .info__lista {
-            font-size: 1.8rem;
         }
         .info__img--primary {
             height: 75%;
@@ -175,5 +178,14 @@
     }
     #trazoMarcador-texto {
         order: 9;
+    }
+    footer {
+        ul {
+            li {
+                img {
+                    width: 25%;
+                }
+            }
+        }
     }
 }

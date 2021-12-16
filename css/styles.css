@@ -13,6 +13,56 @@ html body {
   background-color: gainsboro;
 }
 
+.flexPadre {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.flexHijo {
+  margin: 1rem;
+}
+
+.extra__grid {
+  display: -ms-grid;
+  display: grid;
+  justify-items: center;
+  -ms-grid-columns: 100%;
+      grid-template-columns: 100%;
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+}
+
+.otrosServicios__grid {
+  display: -ms-grid;
+  display: grid;
+  justify-items: center;
+  -ms-grid-columns: 100%;
+      grid-template-columns: 100%;
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+}
+
+.curiosidades__grid {
+  display: -ms-grid;
+  display: grid;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-grid-columns: 100%;
+      grid-template-columns: 100%;
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+}
+
 /* ------------------ NAV ------------------ */
 nav {
   padding: 3rem;
@@ -48,38 +98,43 @@ nav ul .activo {
 }
 
 /* ------------------ MAIN ------------------ */
+h1 {
+  text-align: center;
+  font-size: 4rem;
+  font-weight: bold;
+  margin: 1rem;
+  padding: 1rem;
+  color: #6A252F;
+  border-bottom: solid #495057;
+}
+
 .info {
-  padding: 2rem;
+  padding: 1rem;
   margin-bottom: 2rem;
 }
 
 .info .info__titulo {
   text-align: center;
+  font-size: 3rem;
 }
 
 .info .info__titulo--primary {
-  font-size: 4rem;
   font-weight: bold;
-  margin: 1rem 0rem;
-  padding-bottom: 1rem;
-  color: #6A252F;
-  border-bottom: solid #495057;
-}
-
-.info .info__titulo--secondary {
-  font-size: 3rem;
-  font-weight: bold;
-  margin: 1rem 0rem;
-  padding: 1rem;
+  margin: 3rem 0rem;
   color: #3e5e04;
 }
 
+.info .info__titulo--secondary {
+  font-weight: bold;
+  margin: 1rem 0rem;
+  color: black;
+}
+
 .info .info__texto {
-  padding: 1rem;
   margin: 1rem 0rem;
   font-size: 2.5rem;
-  text-align: center;
   line-height: 2.5rem;
+  text-align: center;
 }
 
 .info .info__boton {
@@ -98,9 +153,9 @@ nav ul .activo {
 }
 
 .info .info__lista {
-  font-size: 2.5rem;
-  margin: 0.5rem 1rem;
   font-style: italic;
+  font-size: 1.8rem;
+  margin: 0.5rem 1rem;
 }
 
 .info .info__link {
@@ -164,129 +219,59 @@ nav ul .activo {
           transform: scale(1.1);
 }
 
-/* ------------------ FLEXBOX ------------------ */
-.flexPadre {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: column;
-          flex-flow: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.flexHijo {
-  margin: 1rem;
-}
-
-/* ------------------ GRID ------------------ */
-.extra__grid {
-  display: -ms-grid;
-  display: grid;
-  justify-items: center;
-  -ms-grid-columns: 100%;
-      grid-template-columns: 100%;
-  -ms-grid-rows: auto;
-      grid-template-rows: auto;
-}
-
-.otrosServicios__grid {
-  display: -ms-grid;
-  display: grid;
-  justify-items: center;
-  -ms-grid-columns: 100%;
-      grid-template-columns: 100%;
-  -ms-grid-rows: auto;
-      grid-template-rows: auto;
-}
-
-.curiosidades__grid {
-  display: -ms-grid;
-  display: grid;
-  justify-items: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-grid-columns: 100%;
-      grid-template-columns: 100%;
-  -ms-grid-rows: auto;
-      grid-template-rows: auto;
-}
-
 /* ------------------ FOOTER ------------------ */
-.pie {
+footer {
   margin-top: 2rem;
   background-color: black;
   border-top: solid;
   text-align: center;
   padding: 2rem;
-  font-size: 2rem;
+  font-size: 2.5rem;
+  line-height: 2.5rem;
 }
 
-.pie .pie__titulo {
+footer h4 {
   font-weight: bold;
   color: #495057;
 }
 
-.pie .pie__texto {
+footer p {
   color: #495057;
 }
 
-.pie .btn--blanco {
-  color: gainsboro;
+footer ul {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style: none;
 }
 
-/* ------------------ 404 ------------------ */
-.error {
-  background-image: url("../imagenes/Enlace_roto.jpg");
-  background-size: contain;
+footer ul li {
+  list-style-type: none;
+  margin: 1rem 0rem;
 }
 
-.error .error_titulo {
-  width: 20rem;
-  background-color: #F5DEB3;
-  color: #6A252F;
+footer ul li img {
+  padding: 1rem;
+  width: 50%;
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
 }
 
-.error .error__texto {
-  font-weight: bold;
-  background-color: gainsboro;
-  font-size: 3rem;
-  color: black;
-  padding: 2rem;
-}
-
-.error .error__link {
-  text-decoration: none;
-  color: black;
-}
-
-.error .error__link:hover {
-  color: #6A252F;
-}
-
-/* ------------------ MAPAS ------------------ */
-.btn--facebook {
-  background-color: #3a5795;
-}
-
-.btn--instagram {
-  background-color: #3f729b;
-}
-
-.btn--whatsapp {
-  background-color: #00bb2d;
+footer ul li img:hover {
+  -webkit-filter: grayscale(0%);
+          filter: grayscale(0%);
 }
 
 @media only screen and (min-width: 768px) {
   .info .info__texto {
     font-size: 2.3rem;
-  }
-  .info .info__lista {
-    font-size: 2rem;
   }
   .info .info__img--primary {
     height: 65%;
@@ -411,14 +396,14 @@ nav ul .activo {
         -ms-flex-order: 9;
             order: 9;
   }
+  footer ul li img {
+    width: 35%;
+  }
 }
 
 @media only screen and (min-width: 1024px) {
   .info .info__texto {
     font-size: 2rem;
-  }
-  .info .info__lista {
-    font-size: 1.8rem;
   }
   .info .info__img--primary {
     height: 75%;
@@ -549,6 +534,9 @@ nav ul .activo {
     -webkit-box-ordinal-group: 10;
         -ms-flex-order: 9;
             order: 9;
+  }
+  footer ul li img {
+    width: 25%;
   }
 }
 /*# sourceMappingURL=styles.css.map */
