@@ -35,37 +35,39 @@ h1 {
     @include negrita;
     margin: 1rem;
     padding: 1rem;
+    text-transform: $mayuscula;
     color: $color-bordo;
     border-bottom: solid $color-gris;
 }
 
 .info {
-    padding: 1rem;
-    margin-bottom: 2rem;
+    padding: 2rem 6rem;
     .info__titulo {
         text-align: center;
-        font-size: $title;
+        font-size: 3rem;
     }
     .info__titulo--primary {
         @include negrita;
-        margin: $title 0rem;
+        margin: 3rem 0rem;
         color: $color-verde;
     }
     .info__titulo--secondary {
         @include negrita;
         @include margenes;
+        padding: 1rem;
         color: $color-negro;
     }
     .info__texto {
         @include margenes;
-        font-size: $font;
-        line-height: $font;
+        padding: 1rem;
+        font-size: 2.5rem;
+        line-height: 3rem;
         text-align: center;
     }
     .info__boton {
-        @include margenes;
-        padding: 0.5rem 2rem;
+        padding: 1rem 2rem;
         font-size: 2.5rem;
+        margin: 2rem;
         @include bordes;
         @include sombras;
         background-color: $color-wheat;
@@ -85,8 +87,8 @@ h1 {
         @include sombras;
     }
     .info__img--primary {
-        width: 100%;
-        margin: 3rem;
+        width: 90%;
+        margin: 2rem;
     }
     .info__img--secondary {
         color: $color-negro;
@@ -103,8 +105,7 @@ h1 {
 }
 
 .extra {
-    @include margenes;
-    padding: 2rem;
+    padding: 3rem 6rem;
     background-image: 
     url("../imagenes/fondo-negro.webp");
     background-size: contain;
@@ -134,8 +135,8 @@ footer {
     border-top: solid;
     text-align: center;
     padding: 2rem;
-    font-size: $font;
-    line-height: $font;
+    font-size: 2.5rem;
+    line-height: 2.5rem;
     h4 {
         @include negrita;
         color: $color-gris;
