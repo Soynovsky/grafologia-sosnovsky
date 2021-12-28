@@ -92,8 +92,8 @@ h1 {
     }
     .info__img--secondary {
         color: $color-negro;
-        width: 65%;
-        margin: 2rem;
+        width: 90%;
+        margin: 1rem;
         &:hover {
             transform: scale(1.1);
         }
@@ -118,7 +118,7 @@ h1 {
         @include bordes;
         padding: 1.5rem;
         @include margenes;
-        width: 100%;
+        width: 95%;
         filter: grayscale(75%);
         &:hover {
             filter: grayscale(0%);

@@ -7,11 +7,19 @@
             line-height: 3rem;
         }
         .info__img--primary {
-            height: 65%;
+            height: 50%;
         }
     }
+    .index__grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto auto auto;
+        gap: 3rem;
+        justify-content: center;
+        align-content: center;
+    }
     .extra__grid {
-        grid-template-columns: 50% 50%;
+        grid-template-columns: auto auto;
         grid-template-rows: auto auto;
         justify-content: center;
         align-content: center;
@@ -92,7 +100,6 @@
     }
 }
 
-
 // ----------------- SCREEN 1024PX -----------------
 
 @media only screen and (min-width: 1024px) {
@@ -111,6 +118,12 @@
     .flexPadre {
         flex-flow: row nowrap;
         justify-content: center;
+    }
+    .index__grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto auto auto;
+        gap: 5rem;
     }
     .extra__grid {
         grid-template-columns: auto auto auto auto;

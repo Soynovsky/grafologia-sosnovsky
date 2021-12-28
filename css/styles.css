@@ -30,6 +30,21 @@ html body {
   margin: 1rem;
 }
 
+.index__grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 100%;
+      grid-template-columns: 100%;
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1rem;
+  margin: 3rem 0rem;
+}
+
 .extra__grid {
   display: -ms-grid;
   display: grid;
@@ -182,8 +197,8 @@ h1 {
 
 .info .info__img--secondary {
   color: black;
-  width: 65%;
-  margin: 2rem;
+  width: 90%;
+  margin: 1rem;
 }
 
 .info .info__img--secondary:hover {
@@ -212,7 +227,7 @@ h1 {
   border-radius: 3rem;
   padding: 1.5rem;
   margin: 1rem 0rem;
-  width: 100%;
+  width: 95%;
   -webkit-filter: grayscale(75%);
           filter: grayscale(75%);
 }
@@ -280,11 +295,25 @@ footer ul li img:hover {
     line-height: 3rem;
   }
   .info .info__img--primary {
-    height: 65%;
+    height: 50%;
+  }
+  .index__grid {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    -ms-grid-rows: auto auto auto;
+        grid-template-rows: auto auto auto;
+    gap: 3rem;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
   }
   .extra__grid {
-    -ms-grid-columns: 50% 50%;
-        grid-template-columns: 50% 50%;
+    -ms-grid-columns: auto auto;
+        grid-template-columns: auto auto;
     -ms-grid-rows: auto auto;
         grid-template-rows: auto auto;
     -webkit-box-pack: center;
@@ -426,6 +455,15 @@ footer ul li img:hover {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+  .index__grid {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    -ms-grid-rows: auto auto auto;
+        grid-template-rows: auto auto auto;
+    gap: 5rem;
   }
   .extra__grid {
     -ms-grid-columns: auto auto auto auto;

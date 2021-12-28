@@ -1,3 +1,13 @@
+.index__grid {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+    justify-items: center;
+    align-items: center;
+    gap: 1rem;
+    margin: 3rem 0rem;
+}
+
 .extra__grid {
     display: grid;
     justify-items: center;
